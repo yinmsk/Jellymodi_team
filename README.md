@@ -36,11 +36,12 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
 
 ## 4. 기능 소개
 <details>
-  <summary>소설 목록 조회 <a href="https://github.com/yinmsk/webtachu/blob/fb13f919f245fa79718c1779d79bf5f18bf14178/books/views.py#L14">📄코드</a></summary>
+  <summary>로그인, 회원가입 기능 구현 <a href="https://github.com/yinmsk/Jellymodi_team/blob/56376460d46d1fafaad91119eafd2f5fe963813c/api/login.py#L12">📄코드</a></summary>
   <div markdown="1">
  
-* 소설책을 장르별로 필터링해서 objects을 가져온 다음 소설책의 정보를 가져와 html에 보내주었다.
-* 프론트에서는 장고 템플릿을 사용하였다.
+* db에 이미 가입된 이메일이 있으면 "중복된 이메일" 이라는 메세지를 보내도록 구현했습니다.
+* 비밀번호를 hashlib 를 사용해 저장했습니다.
+* try / except 문을 사용해 token가 만료되었을 때, 올바르게 디코딩되지 않았을 때 서로 다른 메세지를 유저한에게 보내게 됩니다.
   </div>
 </details>
 <br><br/>
