@@ -54,7 +54,7 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
 </details>
 <br><br/>
 
-https://github.com/yinmsk/Jellymodi_team/blob/2a95094b57557c4065531ab199e8305879bcaa5e/app.py#L18
+
 ## 5. 트러블 슈팅
 <details>
   <summary>7개의 감정이 담긴 표정을 학습 시켰었는데 모델의 정확도가 높지 않았다.</summary>
@@ -70,6 +70,7 @@ https://github.com/yinmsk/Jellymodi_team/blob/2a95094b57557c4065531ab199e8305879
   <div markdown="1">
  
 * 000
+     [📄코드](https://github.com/yinmsk/Jellymodi_team/blob/2a95094b57557c4065531ab199e8305879bcaa5e/app.py#L18)
   </div>
 </details>
 <br><br/>
