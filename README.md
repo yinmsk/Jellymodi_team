@@ -16,20 +16,15 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
 노을 <a href="https://github.com/minkkky"><img src="https://img.shields.io/badge/Github-000000?style=flat-square&logo=github&logoColor=white"/></a>
 이정아 <a href="https://github.com/zeonga1102"><img src="https://img.shields.io/badge/Github-000000?style=flat-square&logo=github&logoColor=white"/></a>
 이현경 <a href="https://github.com/LULULALA2"><img src="https://img.shields.io/badge/Github-000000?style=flat-square&logo=github&logoColor=white"/></a>
-* **S.A** <a href="https://cold-charcoal.tistory.com/118">블로그로 이동(☞ﾟヮﾟ)☞</a>
+* **S.A** <a href="https://cold-charcoal.tistory.com/68">블로그로 이동(☞ﾟヮﾟ)☞</a>
 ***
 <br><br/>
 
 
 ## 2. 사용 기술(버전 적기)
-* python 3.7.13
-* Django 3.2.13
-* DRF 3.13.1
-* deepfake
-* docker
-* AWS
-* postgreSQL
-* javascript
+* Python 3.8
+* Flask
+* MongoDB
  
 <br><br/>
 
@@ -40,7 +35,7 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
 
 
 ## 4. 핵심 기능
-이 프로젝트의 핵심 기능은 000입니다.
+이 프로젝트의 핵심 기능은 사진에서 얼굴을 인식하고 제작한 모델을 이용해 표정을 분류해서 알맞은 젤리 아이콘으로 변경하고 일기 작성하는 것입니다.
 <details>
   <summary>기능 자세히 알아보기</summary>
   <div markdown="1">
