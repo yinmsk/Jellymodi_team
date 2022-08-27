@@ -44,9 +44,17 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
 * try / except 문을 사용해 token가 만료되었을 때, 올바르게 디코딩되지 않았을 때 서로 다른 메세지를 유저한에게 보내게 됩니다.
   </div>
 </details>
+
+<details>
+  <summary>일기 작성 <a href="https://github.com/zeonga1102/Jellymodi_team/blob/master/api/post.py#L51">📄코드</a></summary>
+  <div markdown="1">
+ 
+* 사용자가 작성한 일기 내용과 사진, 얼굴 표정에 알맞은 젤리 아이콘을 저장합니다.
+  </div>
+</details>
 <br><br/>
 
-
+https://github.com/yinmsk/Jellymodi_team/blob/2a95094b57557c4065531ab199e8305879bcaa5e/app.py#L18
 ## 5. 트러블 슈팅
 <details>
   <summary>7개의 감정이 담긴 표정을 학습 시켰었는데 모델의 정확도가 높지 않았다.</summary>
@@ -54,6 +62,14 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
  
 * 7개의 표정으로 학습을 시키다 보니 애매하게 실제로 어떤 감정을 가진 표정인지 사람인 내가 봐도 구분하기 어려웠었기 때문에,<br>
     표정을 4개로 줄이고 학습을 시키니 0.6,7 정도의 정확도만 나오던 모델이 정확도가 0.9까지 오를 수 있었다.
+  </div>
+</details>
+
+<details>
+  <summary>월별로 내림차순 / 일별로도 오름차순 으로 구현하고 싶었지만 일별 오름차순이 구현되지 못했습니다. </summary>
+  <div markdown="1">
+ 
+* 000
   </div>
 </details>
 <br><br/>
