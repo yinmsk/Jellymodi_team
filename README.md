@@ -10,7 +10,7 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
 
 
 ## 1. 개발 기간, 참여 인원
-* 개발기간: 2022.07.06 - 2022.08.16
+* 개발기간: 2022.06.02 - 2022.06.14
 * **Team** <a href="https://github.com/cmjcum"><img src="https://img.shields.io/badge/Github-000000?style=flat-square&logo=github&logoColor=white"/></a>
 김동근 <a href="https://github.com/yinmsk"><img src="https://img.shields.io/badge/Github-000000?style=flat-square&logo=github&logoColor=white"/></a>
 노을 <a href="https://github.com/minkkky"><img src="https://img.shields.io/badge/Github-000000?style=flat-square&logo=github&logoColor=white"/></a>
@@ -21,33 +21,26 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
 <br><br/>
 
 
-## 2. 사용 기술(버전 적기)
+## 2. 사용 기술
 * Python 3.8
 * Flask
 * MongoDB
- 
+* Tensorflow 2.9
 <br><br/>
 
 
 ## 3. ERD 설계
-![wm](https://user-images.githubusercontent.com/104487608/186304526-54d008c7-08a2-4e8d-82d7-fb581cc7a8cc.png)
+![jellymodi](https://user-images.githubusercontent.com/104487608/187019946-deb2d4ad-50a2-49ae-b093-3e2189e23038.png)
 <br><br/>
 
 
-## 4. 핵심 기능
-이 프로젝트의 핵심 기능은 사진에서 얼굴을 인식하고 제작한 모델을 이용해 표정을 분류해서 알맞은 젤리 아이콘으로 변경하고 일기 작성하는 것입니다.
+## 4. 기능 소개
 <details>
-  <summary>기능 자세히 알아보기</summary>
+  <summary>소설 목록 조회 <a href="https://github.com/yinmsk/webtachu/blob/fb13f919f245fa79718c1779d79bf5f18bf14178/books/views.py#L14">📄코드</a></summary>
   <div markdown="1">
  
-### 4-1. 핵심 기능 구현
-핵심 기능 이미지나 글 작성
-### 4-2. 그 외의 기능 소개
-* 첫 번째 기능 이름 [코드 확인](https://github.com/yinmsk/WM_back/blob/739a549417f4d2bfa0fa7d6eea1c42a45d89631b/myroom/views.py#L42-L44)
-  * 기능 설명
-* 두 번째 기능 이름 [코드 확인](https://github.com/yinmsk/WM_back/blob/739a549417f4d2bfa0fa7d6eea1c42a45d89631b/myroom/views.py#L42-L44)
-  * 기능 설명    
-    
+* 소설책을 장르별로 필터링해서 objects을 가져온 다음 소설책의 정보를 가져와 html에 보내주었다.
+* 프론트에서는 장고 템플릿을 사용하였다.
   </div>
 </details>
 <br><br/>
@@ -55,22 +48,28 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
 
 ## 5. 트러블 슈팅
 <details>
-  <summary>트러블 슈팅 1</summary>
+  <summary>해당 장르의 책을 조회하기에 어려움이 있었다.</summary>
   <div markdown="1">
  
-* 여기
+* url에 name을 지정해주고 views.py 의 함수 안에 name 을 넣음으로 해당 장르의 소설책만 가져올 수 있었다.
+   [📄코드](https://github.com/yinmsk/webtachu/blob/fb13f919f245fa79718c1779d79bf5f18bf14178/books/views.py#L14)
   </div>
 </details>
 
 <details>
-  <summary>트러블 슈팅 2</summary>
+  <summary>좋아요 누른 작품 최신순 정렬에 어려움이 있습니다. BookModel의 id값으로 정렬을 하려 했지만 정렬을 할 수 없었습니다</summary>
   <div markdown="1">
  
-* 여기
+* 정렬이 되지 않았던 이유는 BookModel의 id 는 book_id이므로 선호작품 등록 순서와는 관계가 없었기 때문이었다. <br>
+   raw query로 users_favorites에 접근하여 해결 할 수 있었습니다. raw query 중간 테이블에 접근해 id값을 받아와 정렬했습니다.
+   [📄코드](https://github.com/zeonga1102/webtachu/blob/master/users/views.py#L118)
   </div>
 </details>
-<br><br/>
+
 
 ## 6. 회고 느낀점
-> 프로젝트 개발 회고 (https://github.com/yinmsk/portfolio)
-
+* 장고 템플릿을 사용한점이 편리했는데 백엔드의 자료를 손쉽게 html에 띄워줄 수 있다는 점이 좋았습니다.
+* 장고를 처음 사용하게 되었는데 반복해서 구현해야 하는 부분들이 이미 만들어져 있어서 좋았습니다.
+ * 로그인 / 회원가입 / 인증 등
+* 또한 장고는 models.py, views.py 와 같이 파일이 역할별로 구분되어있어서 잘 정리되고 체계적으로 프로그램을 만들 수 있다는 점이 좋았습니다.
+* 앞으로 장고를 더 많이 다루게 되고 사용하게 된다고 했는데 잘 익혀 보고 싶다.
