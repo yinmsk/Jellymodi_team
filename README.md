@@ -73,6 +73,24 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
      [📄코드](https://github.com/yinmsk/Jellymodi_team/blob/2a95094b57557c4065531ab199e8305879bcaa5e/app.py#L18)
   </div>
 </details>
+
+<details>
+  <summary>7개의 감정이 담긴 표정을 학습 시켰었는데 모델의 정확도가 높지 않았다.</summary>
+  <div markdown="1">
+ 
+* 7개의 표정으로 학습을 시키다 보니 애매하게 실제로 어떤 감정을 가진 표정인지 사람인 내가 봐도 구분하기 어려웠었기 때문에,<br>
+    표정을 4개로 줄이고 학습을 시키니 0.6,7 정도의 정확도만 나오던 모델이 정확도가 0.9까지 오를 수 있었다.
+  </div>
+</details>
+
+<details>
+  <summary>월별로 내림차순 / 일별로도 오름차순 으로 구현하고 싶었지만 일별 오름차순이 구현되지 못했습니다. </summary>
+  <div markdown="1">
+ 
+*  '년월', '일'을 따로 구분해 저장해주고 '년월'은 -int()를 사용해 역순으로 '일'은 그대로 저장해서 오름차순으로 저장해도록 구현했습니다.
+     [📄코드](https://github.com/yinmsk/Jellymodi_team/blob/75fbf84d95c46ea85370df6e37b5ef760975eaf5/app.py#L18)
+  </div>
+</details>
 <br><br/>
 
 
