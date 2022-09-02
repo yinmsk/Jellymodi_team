@@ -49,6 +49,7 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
   <summary>일기 작성 <a href="https://github.com/zeonga1102/Jellymodi_team/blob/master/api/post.py#L51">📄코드</a></summary>
   <div markdown="1">
  
+![젤리](https://user-images.githubusercontent.com/104487608/188054044-39865313-8cc2-4068-b47e-9433291bd54e.png)
 * 사용자가 작성한 일기 내용과 사진, 얼굴 표정에 알맞은 젤리 아이콘을 저장합니다.
   </div>
 </details>
