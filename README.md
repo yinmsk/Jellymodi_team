@@ -25,7 +25,6 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
 * Python 3.8
 * Flask
 * MongoDB
-* Tensorflow 2.9
 <br><br/>
 
 
