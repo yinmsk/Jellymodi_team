@@ -22,7 +22,7 @@ Python OpenCV 를 이용하여 얼굴 표정을 인식하고, 분석한 표정�
 
 
 ## 2. 사용 기술
-* Python 3.8
+* Python
 * Flask
 * MongoDB
 <br><br/>
